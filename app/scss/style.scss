@@ -78,9 +78,20 @@ h1 {
   font-size: 15px;
   line-height: 140%;
   border: 1px solid #E4E7EB;
+  transition: color .5s ease;
   svg {
     margin-right: 14px;
     margin-top: 1px;
+    fill: $red;
+    transition: fill .5s ease;
+  }
+  &:hover {
+    color: $black;
+    transition: color .5s ease;
+  }
+  &:hover svg {
+    fill: $black;
+    transition: fill .5s ease;
   }
 }
 
@@ -130,6 +141,11 @@ h1 {
       background: rgba(229, 229, 229, 0.9);
       transition: background .5s ease;
     }
+  }
+  .show {
+    padding: 14.5px;
+    color: $red;
+    font-size: 12px;
   }
 }
 
